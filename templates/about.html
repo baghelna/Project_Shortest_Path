@@ -1,0 +1,38 @@
+
+ {% extends "layout.html" %}
+
+  {% block body %}
+
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{url_for('static',filename = 'img/home-bg.jpg')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Us</h1>
+            <span class="subheading">This is what we did.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>This website was created by Nikeshsingh Baghel, Mohit Shingane and Nikhil Likhar from Computer science branch of Shri Ramdeobaba College of Engineering and Management.</p>
+        <p>We used Flask, html and CSS to build this website, for visualisation of graph we used Folium library which uses openstreetmaps. There are also libraries such as osmnx and networkx in python which we do NOT used. The reason behind not using these libraries was they have inbuilt function which directly gives the output, but we wanted to build this from scratch and in this way someone who wants to understand the concept and applications of shortest path algorithm can observe how dijkstra's algorithm finds the shortest path and displays those points in graph </p>
+        <p>Therefore wrote whole code from scratch, for calculating the shortest path we wrote dijkstra's algorithm and after getting the path we added that path to openstreetmap</p>
+        <p>Since we were not able to find any dataset, we made our own dataset to make graph for dijkstra's algorithm.<br> We used 20 cities of India that are -  <br>Bangalore,Hyderabad,Kolkata,Delhi,Bhopal,Thiruvananthapuram,Lucknow ,Chennai,Srinagar,Gandhinagar,Mumbai,Ahmedabad,Pune,Nagpur,Jaipur,Chandigarh,<br>Guwahati,Indore,Aurangabad,Patna
+    </p>
+
+        <p>If anyone can contribute for our dataset or has any queries can contact us, we'll be grateful to reply!</p>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}
